@@ -6,20 +6,25 @@ public class PlayerController : MonoBehaviour
     private PlayerControls controls;
     private Vector2 moveInput;
     private Rigidbody2D rb;
+
     public float moveSpeed = 5f;
     public float jumpForce = 10f;
+
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public float groundCheckRayLength = 0.1f;
 
     private Animator animator;
     private SpriteRenderer spriteRenderer;
+
+    private bool jumpRequested;
 
     private void Awake()
     {
         controls = new PlayerControls();
         controls.Player.Move.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         controls.Player.Move.canceled += ctx => moveInput = Vector2.zero;
-        controls.Player.Jump.performed += ctx => Jump();
+        controls.Player.Jump.performed += ctx => jumpRequested = true;
     }
 
     private void OnEnable() => controls.Enable();
@@ -34,31 +39,27 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
-        // Set Speed for walk animation
-        animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
-
-        // Flip character sprite
+        // Flip sprite
         if (moveInput.x != 0)
             spriteRenderer.flipX = moveInput.x < 0;
 
-        // Set IsJumping based on grounded state
-        animator.SetBool("IsJumping", !IsGrounded());
-    }
-
-    private void Jump()
-    {
-        if (IsGrounded())
+        // Jump
+        if (jumpRequested && IsGrounded())
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+        jumpRequested = false;
+
+        // Animation - only for walk/idle
+        animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
     }
 
     private bool IsGrounded()
     {
-        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, 0.2f, groundLayer);
+        RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRayLength, groundLayer);
         return hit.collider != null;
     }
-
 }
