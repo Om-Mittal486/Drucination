@@ -2902,7 +2902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerRb: {fileID: 1268701187}
-  cameraSpeed: 0.4
+  cameraSpeed: 0.421
   followThreshold: 0.1
   freezeCamera: 0
   stopX: 6.152573
@@ -4675,7 +4675,7 @@ MonoBehaviour:
   - rb: {fileID: 317612834}
     startPos: {x: 0, y: 0, z: 0}
     startRot: {x: 0, y: 0, z: 0, w: 0}
-  fallInterval: 0.29
+  fallInterval: 0.26
   shakeDuration: 0.12
   shakeMagnitude: 0.01
   playerTag: Player
