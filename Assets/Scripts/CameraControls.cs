@@ -2,23 +2,32 @@ using UnityEngine;
 
 public class CameraFollowConstant : MonoBehaviour
 {
-    public Rigidbody2D playerRb;        // Assign Player Rigidbody2D in Inspector
-    public float cameraSpeed = 5f;      // Constant camera movement speed
-    public float followThreshold = 0.1f; // Minimum player speed before camera moves
+    public Rigidbody2D playerRb;
+    public float cameraSpeed = 5f;
+    public float followThreshold = 0.1f;
+    public bool freezeCamera = false;
+
+    public float stopX = 5.152573f;
+    public float stopY = -0.06f;
 
     void LateUpdate()
     {
-        if (playerRb == null) return;
+        if (playerRb == null || freezeCamera) return;
 
         float playerVelocityX = playerRb.linearVelocity.x;
 
-        // Move only if player is moving horizontally beyond threshold
         if (Mathf.Abs(playerVelocityX) > followThreshold)
         {
-            float direction = Mathf.Sign(playerVelocityX); // Get direction: -1 (left) or 1 (right)
+            float direction = Mathf.Sign(playerVelocityX);
             Vector3 newPosition = transform.position;
             newPosition.x += direction * cameraSpeed * Time.deltaTime;
             transform.position = newPosition;
+        }
+
+        // Check if camera reached the stop point
+        if (transform.position.x >= stopX && transform.position.y <= stopY)
+        {
+            freezeCamera = true;
         }
     }
 }

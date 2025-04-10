@@ -3,6 +3,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
+    public bool canMove = true;
+
     private PlayerControls controls;
     private Vector2 moveInput;
     private Rigidbody2D rb;
@@ -39,6 +41,12 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!canMove)
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            return;
+        }
+
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
@@ -53,7 +61,7 @@ public class PlayerController : MonoBehaviour
         }
         jumpRequested = false;
 
-        // Animation - only for walk/idle
+        // Animation
         animator.SetFloat("Speed", Mathf.Abs(moveInput.x));
     }
 
