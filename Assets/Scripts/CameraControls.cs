@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CameraFollowConstant : MonoBehaviour
 {
@@ -7,12 +7,17 @@ public class CameraFollowConstant : MonoBehaviour
     public float followThreshold = 0.1f;
     public bool freezeCamera = false;
 
-    public float stopX = 5.152573f;
-    public float stopY = -0.06f;
+    public Vector2 stopPosition = new Vector2(6.152573f, -0.06f); // ← your final stop
+    private bool reachedStopPoint = false;
+
+    public void SnapToPosition(Vector3 position)
+    {
+        transform.position = new Vector3(position.x, position.y, transform.position.z);
+    }
 
     void LateUpdate()
     {
-        if (playerRb == null || freezeCamera) return;
+        if (playerRb == null || freezeCamera || reachedStopPoint) return;
 
         float playerVelocityX = playerRb.linearVelocity.x;
 
@@ -24,10 +29,10 @@ public class CameraFollowConstant : MonoBehaviour
             transform.position = newPosition;
         }
 
-        // Check if camera reached the stop point
-        if (transform.position.x >= stopX && transform.position.y <= stopY)
+        // Check if we've reached or passed the stop point
+        if (transform.position.x >= stopPosition.x && transform.position.y <= stopPosition.y)
         {
-            freezeCamera = true;
+            reachedStopPoint = true;
         }
     }
 }
