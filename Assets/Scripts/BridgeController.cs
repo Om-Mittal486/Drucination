@@ -5,7 +5,7 @@ using System.Collections.Generic;
 public class BridgeTrigger : MonoBehaviour
 {
     public List<BridgeBlock> bridgeBlocks = new List<BridgeBlock>();
-    public float fallInterval = 1.5f;
+    public float fallInterval = 3f;
     public float shakeDuration = 0.12f;
     public float shakeMagnitude = 0.01f;
     public string playerTag = "Player";
