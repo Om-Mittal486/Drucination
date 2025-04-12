@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private bool jumpRequested;
+    private bool jumpAfterUnlock = false;
 
     private void Awake()
     {
@@ -47,6 +48,16 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        // If movement just got enabled, trigger auto jump
+        if (jumpAfterUnlock)
+        {
+            if (IsGrounded())
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                jumpAfterUnlock = false;
+            }
+        }
+
         // Horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
 
@@ -69,5 +80,12 @@ public class PlayerController : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(groundCheck.position, Vector2.down, groundCheckRayLength, groundLayer);
         return hit.collider != null;
+    }
+
+    // Call this from the camera script when cinematic ends
+    public void UnlockMovementWithJump()
+    {
+        canMove = true;
+        jumpAfterUnlock = true;
     }
 }
