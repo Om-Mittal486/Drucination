@@ -2834,6 +2834,7 @@ GameObject:
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
   - component: {fileID: 519420033}
+  - component: {fileID: 519420034}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2977,6 +2978,25 @@ MonoBehaviour:
   freezeCamera: 0
   stopPosition: {x: 6.152573, y: -0.06}
   minX: 0
+--- !u!114 &519420034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89dea5f6bca818340a04dea27e5ee62d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  offset: {x: 0, y: 0, z: -10}
+  minX: 0
+  maxX: 6.14
+  minY: -0.06
+  maxY: -0.06
+  cinematicSpeed: 3
 --- !u!1 &523501353
 GameObject:
   m_ObjectHideFlags: 0
@@ -4749,7 +4769,7 @@ MonoBehaviour:
   - rb: {fileID: 317612834}
     startPos: {x: 0, y: 0, z: 0}
     startRot: {x: 0, y: 0, z: 0, w: 0}
-  fallInterval: 0.26
+  fallInterval: 0.36
   shakeDuration: 0.12
   shakeMagnitude: 0.01
   playerTag: Player
