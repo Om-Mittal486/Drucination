@@ -22,24 +22,6 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Crouch",
-                    "type": "Button",
-                    "id": "c6529c0f-07aa-45d1-a141-18f041e18d9d",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
-                },
-                {
-                    "name": "Time_Reverse",
-                    "type": "Button",
-                    "id": "f666ce2c-34c0-4da8-86f1-a7cea55289b9",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -66,9 +48,31 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "left",
+                    "id": "f90eaba3-6207-4e9c-8f82-62c94f816098",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "right",
                     "id": "ae7ac6bf-fa70-4af8-8f78-ea480c592dca",
                     "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Move",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "0818f7ed-778c-4b57-b6f3-b602d00d8699",
+                    "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -89,23 +93,12 @@
                 },
                 {
                     "name": "",
-                    "id": "c44d61c4-37c0-4a11-b7f8-0c2f0a8cb11a",
-                    "path": "<Keyboard>/c",
+                    "id": "b2459325-e95e-4df5-9a1b-5c7a4d30e494",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Crouch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "0fe2110b-1b1c-4031-b821-818d94564303",
-                    "path": "<Keyboard>/r",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Time_Reverse",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
