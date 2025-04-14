@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      preview-day-platformer_0: -1226903543392422496
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

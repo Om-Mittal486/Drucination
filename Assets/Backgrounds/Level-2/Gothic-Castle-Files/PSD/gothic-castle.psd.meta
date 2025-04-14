@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gothic-castle_0: -8400797802580840117
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
