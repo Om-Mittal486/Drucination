@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e7ab0e4c2c093649bf7602002bd7c48
+guid: 7483416c7a9c59f4f8c0a225c22e33ee
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -103,9 +103,9 @@ TextureImporter:
       name: tileset_0
       rect:
         serializedVersion: 2
-        x: 256
+        x: 143
         y: 16
-        width: 32
+        width: 16
         height: 15
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

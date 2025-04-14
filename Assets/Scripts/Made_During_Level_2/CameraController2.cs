@@ -14,6 +14,8 @@ public class CameraFollowBounded : MonoBehaviour
     public float maxY = 5.21f;
 
     [Header("Cinematic Movement")]
+    public float cinematicHeight = 3f; // Height to move to during cinematic
+    public float cinematicLength = 47f; // Length to move to during cinematic
     public float cinematicSpeed = 3f;
     private bool cinematicRunning = false;
 
@@ -45,11 +47,11 @@ public class CameraFollowBounded : MonoBehaviour
             pc.canMove = false;
 
         // Step 1: Move up to y = 3
-        Vector3 step1 = new Vector3(transform.position.x, 3f, transform.position.z);
+        Vector3 step1 = new Vector3(transform.position.x, cinematicHeight, transform.position.z);
         yield return StartCoroutine(MoveToPosition(step1));
 
         // Step 2: Move right to x = 47
-        Vector3 step2 = new Vector3(47f, transform.position.y, transform.position.z);
+        Vector3 step2 = new Vector3(cinematicLength, transform.position.y, transform.position.z);
         yield return StartCoroutine(MoveToPosition(step2));
 
         // Step 3: Return to player QUICKLY
