@@ -108,6 +108,15 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleTime"",
+                    ""type"": ""Button"",
+                    ""id"": ""c3f8ca68-5763-45e3-9098-4e553fcba866"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -187,6 +196,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""89971945-93b8-4c4a-a8b2-c5b7f1b9c8a2"",
+                    ""path"": ""<Keyboard>/t"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""ToggleTime"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -197,6 +217,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Move = m_Player.FindAction("Move", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
+        m_Player_ToggleTime = m_Player.FindAction("ToggleTime", throwIfNotFound: true);
     }
 
     ~@PlayerControls()
@@ -279,6 +300,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private List<IPlayerActions> m_PlayerActionsCallbackInterfaces = new List<IPlayerActions>();
     private readonly InputAction m_Player_Move;
     private readonly InputAction m_Player_Jump;
+    private readonly InputAction m_Player_ToggleTime;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -298,6 +320,10 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Jump".
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ToggleTime".
+        /// </summary>
+        public InputAction @ToggleTime => m_Wrapper.m_Player_ToggleTime;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -330,6 +356,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @ToggleTime.started += instance.OnToggleTime;
+            @ToggleTime.performed += instance.OnToggleTime;
+            @ToggleTime.canceled += instance.OnToggleTime;
         }
 
         /// <summary>
@@ -347,6 +376,9 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @ToggleTime.started -= instance.OnToggleTime;
+            @ToggleTime.performed -= instance.OnToggleTime;
+            @ToggleTime.canceled -= instance.OnToggleTime;
         }
 
         /// <summary>
@@ -401,5 +433,12 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ToggleTime" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleTime(InputAction.CallbackContext context);
     }
 }
