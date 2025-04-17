@@ -6,7 +6,6 @@ public class TimeTagFreeze : MonoBehaviour
 {
     [Header("Time Stop Settings")]
     public float timeStopDuration = 5f;
-
     private PlayerControls controls;
     private bool isTimeStopped = false;
     private Coroutine stopTimer;
