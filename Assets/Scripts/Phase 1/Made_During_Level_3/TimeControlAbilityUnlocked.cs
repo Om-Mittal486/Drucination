@@ -35,4 +35,3 @@ public class TimeStopAbilityUnlockTrigger : MonoBehaviour
         Destroy(gameObject); // Destroy trigger after teleport
     }
 }
-
