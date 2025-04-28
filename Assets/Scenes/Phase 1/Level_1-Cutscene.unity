@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoPlayer: {fileID: 1169806537}
-  nextSceneBuildIndex: 2
+  nextSceneBuildIndex: 3
 --- !u!4 &784405257
 Transform:
   m_ObjectHideFlags: 0

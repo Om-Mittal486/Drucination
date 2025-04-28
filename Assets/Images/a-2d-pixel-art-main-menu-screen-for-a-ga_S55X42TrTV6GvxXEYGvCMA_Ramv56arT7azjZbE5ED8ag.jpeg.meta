@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5bc36a7016aa0d443a673712a7957c92
+guid: efc922d139f1b39489267fe02504952d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8400797802580840117
-    second: gothic-castle_0
+      213: 4374629971163465994
+    second: a-2d-pixel-art-main-menu-screen-for-a-ga_S55X42TrTV6GvxXEYGvCMA_Ramv56arT7azjZbE5ED8ag_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gothic-castle_0
+      name: a-2d-pixel-art-main-menu-screen-for-a-ga_S55X42TrTV6GvxXEYGvCMA_Ramv56arT7azjZbE5ED8ag_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1024
-        height: 336
+        width: 1312
+        height: 736
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b41794b68ee5a6b80800000000000000
-      internalID: -8400797802580840117
+      spriteID: a09c9fee7cec5bc30800000000000000
+      internalID: 4374629971163465994
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      gothic-castle_0: -8400797802580840117
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

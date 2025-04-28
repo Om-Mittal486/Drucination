@@ -2144,11 +2144,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2022250250072920226, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
       propertyPath: jumpForce
-      value: 5
+      value: 23
       objectReference: {fileID: 0}
     - target: {fileID: 2022250250072920226, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
       propertyPath: moveSpeed
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2022250250072920226, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
       propertyPath: groundCheckRayLength
@@ -2165,6 +2165,10 @@ PrefabInstance:
     - target: {fileID: 7632090270696555285, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8913364925505572453, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
+      propertyPath: m_GravityScale
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 9148632207336147198, guid: fdf6c3ec5a4ebe446b61fbfe38df32b8, type: 3}
       propertyPath: m_LocalScale.x
@@ -3645,7 +3649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 167228727}
-  offset: {x: -5.35, y: 0, z: -10}
+  offset: {x: 6, y: 3, z: -10}
   minX: -5.35
   maxX: 35
   minY: 0.02

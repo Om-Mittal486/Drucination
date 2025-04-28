@@ -144,6 +144,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -534,7 +547,24 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gothic-castle-tileset_0: -4559714520324386702
+      gothic-castle-tileset_1: -3607595857266151138
+      gothic-castle-tileset_10: 2861549199657509823
+      gothic-castle-tileset_11: 1713327456995432440
+      gothic-castle-tileset_12: 1202661311191520987
+      gothic-castle-tileset_13: 1006356731906034481
+      gothic-castle-tileset_14: 6338183564377555535
+      gothic-castle-tileset_15: 3991327874826935745
+      gothic-castle-tileset_16: 317661658264710227
+      gothic-castle-tileset_2: -8085249421111813745
+      gothic-castle-tileset_3: -7793204249813224541
+      gothic-castle-tileset_4: 872671447571451570
+      gothic-castle-tileset_5: 7388157981859755223
+      gothic-castle-tileset_6: -5789565267923724596
+      gothic-castle-tileset_7: 3369351352839688661
+      gothic-castle-tileset_8: 4976782489130180837
+      gothic-castle-tileset_9: 1812665308502383219
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
