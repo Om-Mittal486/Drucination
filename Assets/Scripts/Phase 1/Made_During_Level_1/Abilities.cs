@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FloatingObject : MonoBehaviour
 {
-    public float floatSpeed = 1f;      // Speed of floating
+    public float floatSpeed = 2f;      // Speed of floating
     public float floatHeight = 0.5f;   // How high it floats
 
     private Vector3 startPos;
