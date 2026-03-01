@@ -18,10 +18,6 @@ Drucination blends fast-paced movement with the ability to rewind or stop time, 
 ## Introduction
 **Drucination** is a 2D story-driven pixel-art adventure set in a decaying world where time is fractured. Navigate a forgotten forest maze, using time manipulation to overcome challenges.
 
-## Installation
-Play on Itch.io: https://lucifer-playz.itch.io/drucination  
-No installation required.
-
 ## Usage / Demo
 Walkthrough: https://youtu.be/MGObxzTpzD4?si=O4CFdzHHqoTlGrA_
 
