@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/banner.png" alt="Drucination Banner" width="100%">
+  <img src="./Screenshots%20and%20Videos/banner.png" alt="Drucination Banner" width="100%">
 </p>
 
 <h1 align="center">⏳ DRUCINATION</h1>
