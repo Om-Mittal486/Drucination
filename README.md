@@ -70,7 +70,7 @@ Players explore a mysterious fractured world where time is no longer linear. Mas
 
 ---
 
-# 📸 Screenshots
+#  Screenshots
 
 <p align="center">
 
@@ -176,7 +176,7 @@ Open the project in **Unity 6** and press **Play**.
 
 ---
 
-# 🏆 Achievements
+#  Achievements
 
 🏆 **PARALLAX GAME JAM WINNER**
 
