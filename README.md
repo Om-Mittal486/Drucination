@@ -37,7 +37,7 @@ A story-driven pixel art adventure where <b>time itself becomes your greatest we
 
 ---
 
-# 🎥 Gameplay
+#  Gameplay
 
 <p align="center">
 
@@ -49,7 +49,7 @@ A story-driven pixel art adventure where <b>time itself becomes your greatest we
 
 ---
 
-# 📖 About
+#  About
 
 **Drucination** is an award-winning **2D pixel-art adventure** developed during **Parallax Game Jam**.
 
@@ -57,16 +57,16 @@ Players explore a mysterious fractured world where time is no longer linear. Mas
 
 ---
 
-# ✨ Features
+#  Features
 
 | Feature | Description |
 |----------|-------------|
-| ⏳ Time Rewind | Reverse recent events to solve puzzles |
-| ❄ Time Stop | Freeze moving objects and hazards |
-| 🧩 Puzzle Platforming | Physics-based environmental puzzles |
-| 🌲 Pixel Art | Hand-crafted environments |
-| 🎵 Atmospheric Audio | Immersive ambience |
-| 🎬 Story Driven | Explore a mysterious world |
+|  Time Rewind | Reverse recent events to solve puzzles |
+|  Time Stop | Freeze moving objects and hazards |
+|  Puzzle Platforming | Physics-based environmental puzzles |
+|  Pixel Art | Hand-crafted environments |
+|  Atmospheric Audio | Immersive ambience |
+|  Story Driven | Explore a mysterious world |
 
 ---
 
@@ -84,7 +84,7 @@ Players explore a mysterious fractured world where time is no longer linear. Mas
 
 ---
 
-# 📚 Story
+#  Story
 
 Time has fractured.
 
@@ -96,7 +96,7 @@ Every puzzle, every platform, and every obstacle demands mastery over the flow o
 
 ---
 
-# 🛠 Technical Overview
+#  Technical Overview
 
 | Category | Technology |
 |-----------|------------|
@@ -110,22 +110,22 @@ Every puzzle, every platform, and every obstacle demands mastery over the flow o
 
 ---
 
-# 🏗 Core Systems
+#  Core Systems
 
-### 🎮 Player Controller
+###  Player Controller
 
 - Movement
 - Jumping
 - Animation Controller
 - Ground Detection
 
-### ⏳ Time System
+###  Time System
 
 - Time Rewind
 - Time Stop
 - Time Affected Objects
 
-### 🌍 Environment
+###  Environment
 
 - Dynamic Platforms
 - Cutscenes
@@ -134,7 +134,7 @@ Every puzzle, every platform, and every obstacle demands mastery over the flow o
 
 ---
 
-# 📂 Project Structure
+#  Project Structure
 
 ```
 Assets
@@ -152,7 +152,7 @@ Assets
 
 ---
 
-# 📜 Important Scripts
+#  Important Scripts
 
 | Script | Responsibility |
 |---------|----------------|
@@ -166,7 +166,7 @@ Assets
 
 ---
 
-# 🚀 Installation
+#  Installation
 
 ```bash
 git clone https://github.com/Om-Mittal486/Drucination.git
@@ -178,10 +178,12 @@ Open the project in **Unity 6** and press **Play**.
 
 # 🏆 Achievements
 
-🥇 Winner — **Parallax Game Jam**
+🏆 **PARALLAX GAME JAM WINNER**
 
-Theme:
-> Time & Reality
+**Theme:
+Time & Reality**
+
+**🥇 First Place**
 
 ---
 
@@ -195,7 +197,7 @@ Theme:
 
 ---
 
-# 👨‍💻 Developer
+#  Developer
 
 **Om Mittal**
 
