@@ -100,7 +100,7 @@ Every puzzle, every platform, and every obstacle demands mastery over the flow o
 
 | Category | Technology |
 |-----------|------------|
-| Engine | Unity 6 |
+| Engine | Unity |
 | Language | C# |
 | Rendering | Universal Render Pipeline |
 | Camera | Cinemachine |
