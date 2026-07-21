@@ -74,11 +74,11 @@ Players explore a mysterious fractured world where time is no longer linear. Mas
 
 <p align="center">
 
-<img src="./assets/screenshot1.png" width="45%">
-<img src="./assets/screenshot2.png" width="45%">
+<img src="./Screenshots%20and%20Videos/screenshot1.png" width="45%">
+<img src="./Screenshots%20and%20Videos/screenshot2.png" width="45%">
 
-<img src="./assets/screenshot3.png" width="45%">
-<img src="./assets/screenshot4.png" width="45%">
+<img src="./Screenshots%20and%20Videos/screenshot3.png" width="45%">
+<img src="./Screenshots%20and%20Videos/screenshot4.png" width="45%">
 
 </p>
 
