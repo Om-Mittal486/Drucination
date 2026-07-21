@@ -1,54 +1,214 @@
-# Drucination
+<p align="center">
+  <img src="./assets/banner.png" alt="Drucination Banner" width="100%">
+</p>
 
-![Unity](https://img.shields.io/badge/Engine-Unity-blue?logo=unity)  ![Platform](https://img.shields.io/badge/Platform-PC%20%2F%20Web-lightgrey?logo=windows)  ![itch.io](https://img.shields.io/badge/Play%20on-itch.io-FA5C5C?logo=itchdotio)  ![YouTube](https://img.shields.io/badge/Watch-Walkthrough-FF0000?logo=youtube)  ![Status](https://img.shields.io/badge/Status-Playable-brightgreen)  ![Genre](https://img.shields.io/badge/Genre-Time%20Manipulation%20Platformer-orange)
+<h1 align="center">⏳ DRUCINATION</h1>
 
-A time-manipulation platformer created for **Parallax Jam**.  
-Drucination blends fast-paced movement with the ability to rewind or stop time, letting players navigate challenging environments through creativity and precision.
+<p align="center">
+<b>🏆 Winner — Parallax Game Jam</b><br>
+A story-driven pixel art adventure where <b>time itself becomes your greatest weapon.</b>
+</p>
 
-## Table of Contents
-- [Introduction](#introduction)  
-- [Installation](#installation)  
-- [Usage / Demo](#usage--demo)  
-- [Features](#features)  
-- [Dependencies](#dependencies)  
-- [Configuration](#configuration)
-- [Script Descriptions](#script-descriptions)  
-- [Troubleshooting](#troubleshooting)  
+<p align="center">
 
-## Introduction
-**Drucination** is a 2D story-driven pixel-art adventure set in a decaying world where time is fractured. Navigate a forgotten forest maze, using time manipulation to overcome challenges.
+![Unity](https://img.shields.io/badge/Engine-Unity_6-000000?logo=unity)
+![Platform](https://img.shields.io/badge/Platform-PC%20%7C%20Web-blue)
+![Language](https://img.shields.io/badge/Language-C%23-purple)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![License](https://img.shields.io/github/license/Om-Mittal486/Drucination)
 
-## Usage / Demo
-Walkthrough: https://youtu.be/MGObxzTpzD4?si=O4CFdzHHqoTlGrA_
+</p>
 
-## Features
-- Time-rewind ability  
-- Time-stop ability  
-- Tight 2D platforming  
-- Puzzle-platforming  
-- Atmospheric pixel art world  
+<p align="center">
 
-## Dependencies
-- Unity (2D URP)  
-- C#  
-- Input System  
-- Cinemachine  
-- VideoPlayer  
-- Custom Time Control System  
+<a href="https://lucifer-playz.itch.io/drucination">
+<img src="https://img.shields.io/badge/🎮_Play_on_itch.io-red?style=for-the-badge">
+</a>
 
-## Configuration
-End user: no setup.  
-Developer: open in Unity.
+<a href="https://youtu.be/MGObxzTpzD4">
+<img src="https://img.shields.io/badge/📺_Gameplay_Video-red?style=for-the-badge">
+</a>
 
-## Script Descriptions
-- PlayerController.cs — player input and movement  
-- TimeControlManager.cs — time mechanics  
-- TimeAffectedObject.cs — objects influenced by time  
-- CutsceneController.cs — cutscene triggers  
-- LevelManager.cs — level transitions  
-- AudioManager.cs — sound mixing  
-- UIController.cs — UI handling  
-- ShaderEffectsController.cs — shader effects  
+<a href="https://github.com/Om-Mittal486/Drucination">
+<img src="https://img.shields.io/badge/⭐_Star_Repository-yellow?style=for-the-badge">
+</a>
 
-## Troubleshooting
-- Controller issues: check Input System  
+</p>
+
+---
+
+# 🎥 Gameplay
+
+<p align="center">
+
+[![Watch Gameplay](https://img.youtube.com/vi/MGObxzTpzD4/maxresdefault.jpg)](https://youtu.be/MGObxzTpzD4)
+
+</p>
+
+> **Click the image above to watch the complete gameplay walkthrough.**
+
+---
+
+# 📖 About
+
+**Drucination** is an award-winning **2D pixel-art adventure** developed during **Parallax Game Jam**.
+
+Players explore a mysterious fractured world where time is no longer linear. Master **time rewind**, **time stop**, and environmental interactions to overcome platforming challenges and uncover the secrets hidden throughout the world.
+
+---
+
+# ✨ Features
+
+| Feature | Description |
+|----------|-------------|
+| ⏳ Time Rewind | Reverse recent events to solve puzzles |
+| ❄ Time Stop | Freeze moving objects and hazards |
+| 🧩 Puzzle Platforming | Physics-based environmental puzzles |
+| 🌲 Pixel Art | Hand-crafted environments |
+| 🎵 Atmospheric Audio | Immersive ambience |
+| 🎬 Story Driven | Explore a mysterious world |
+
+---
+
+# 📸 Screenshots
+
+<p align="center">
+
+<img src="./assets/screenshot1.png" width="45%">
+<img src="./assets/screenshot2.png" width="45%">
+
+<img src="./assets/screenshot3.png" width="45%">
+<img src="./assets/screenshot4.png" width="45%">
+
+</p>
+
+---
+
+# 📚 Story
+
+Time has fractured.
+
+Ancient ruins remain frozen between the past and present, while nature slowly reclaims what civilization once built.
+
+You awaken with the power to manipulate time itself.
+
+Every puzzle, every platform, and every obstacle demands mastery over the flow of time as you search for the truth hidden deep within this forgotten world.
+
+---
+
+# 🛠 Technical Overview
+
+| Category | Technology |
+|-----------|------------|
+| Engine | Unity 6 |
+| Language | C# |
+| Rendering | Universal Render Pipeline |
+| Camera | Cinemachine |
+| Input | Unity Input System |
+| Audio | Unity Audio Mixer |
+| Version Control | Git + GitHub |
+
+---
+
+# 🏗 Core Systems
+
+### 🎮 Player Controller
+
+- Movement
+- Jumping
+- Animation Controller
+- Ground Detection
+
+### ⏳ Time System
+
+- Time Rewind
+- Time Stop
+- Time Affected Objects
+
+### 🌍 Environment
+
+- Dynamic Platforms
+- Cutscenes
+- Scene Transitions
+- Interactive Objects
+
+---
+
+# 📂 Project Structure
+
+```
+Assets
+│
+├── Animations
+├── Audio
+├── Materials
+├── Prefabs
+├── Scenes
+├── Scripts
+├── Sprites
+├── UI
+└── Shaders
+```
+
+---
+
+# 📜 Important Scripts
+
+| Script | Responsibility |
+|---------|----------------|
+| PlayerController.cs | Character movement |
+| TimeControlManager.cs | Time manipulation |
+| TimeAffectedObject.cs | Rewindable objects |
+| CutsceneController.cs | Story cutscenes |
+| LevelManager.cs | Scene transitions |
+| AudioManager.cs | Audio handling |
+| UIController.cs | User Interface |
+
+---
+
+# 🚀 Installation
+
+```bash
+git clone https://github.com/Om-Mittal486/Drucination.git
+```
+
+Open the project in **Unity 6** and press **Play**.
+
+---
+
+# 🏆 Achievements
+
+🥇 Winner — **Parallax Game Jam**
+
+Theme:
+> Time & Reality
+
+---
+
+# 🔮 Future Improvements
+
+- Additional Levels
+- Controller Support
+- More Boss Encounters
+- Steam Release
+- More Time Mechanics
+
+---
+
+# 👨‍💻 Developer
+
+**Om Mittal**
+
+GitHub:
+https://github.com/Om-Mittal486
+
+itch.io:
+https://lucifer-playz.itch.io/
+
+---
+
+<p align="center">
+
+⭐ If you enjoyed the project, consider leaving a star!
+
+</p>
